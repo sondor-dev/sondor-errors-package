@@ -1,5 +1,5 @@
 # Sondor Errors
-[![Build Status](https://dev.azure.com/sondortechnology/Sondor%20Infrastructure/_apis/build/status%2Fsondor-dev.sondor-errors-package?repoName=sondor-dev%2Fsondor-errors-package&branchName=master)](https://dev.azure.com/sondortechnology/Sondor%20Infrastructure/_build/latest?definitionId=101&repoName=sondor-dev%2Fsondor-errors-package&branchName=master) ![NuGet Downloads](https://img.shields.io/nuget/dt/Sondor.Errors)
+[![Build Status](https://dev.azure.com/sondortechnology/Sondor%20Infrastructure/_apis/build/status%2Fsondor-dev.sondor-errors-package?repoName=sondor-dev%2Fsondor-errors-package&branchName=master)](https://dev.azure.com/sondortechnology/Sondor%20Infrastructure/_build/latest?definitionId=102&repoName=sondor-dev%2Fsondor-errors-package&branchName=master) ![NuGet Downloads](https://img.shields.io/nuget/dt/Sondor.Errors)
 
 Sondor errors provides an easy way to manage errors, how they're handled and simplifying the process of raising, creating and customized clear
 and easy to understand errors. Providing base custom exceptions, that apply to many common scenarios while encouraging the use of customized more
