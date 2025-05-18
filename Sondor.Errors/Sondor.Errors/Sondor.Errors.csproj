@@ -12,8 +12,8 @@
     <RepositoryUrl>https://github.com/sondor-dev/sondor-errors-package</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageReleaseNotes>The initial release.</PackageReleaseNotes>
-    <PackageIcon>README.md</PackageIcon>
-    <PackageReadmeFile>sondor-technology-logo.jpg</PackageReadmeFile>
+    <PackageIcon>sondor-technology-logo.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
