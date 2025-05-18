@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Sondor.Errors</Title>
+    <Authors>Sondor Technology</Authors>
+    <Company>Sondor Technology</Company>
+    <Description>Erorr handling made easy, providing a consistent but easy to follow pattern on how to follow and handle application errors.</Description>
+    <PackageProjectUrl>https://github.com/sondor-dev/sondor-errors-package</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sondor-dev/sondor-errors-package</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageReleaseNotes>The initial release.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>$(AssemblyName).Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>
