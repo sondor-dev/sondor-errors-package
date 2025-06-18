@@ -19,6 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="LICENSE" />
     <None Remove="README.md" />
     <None Remove="sondor-technology-logo.jpg" />
   </ItemGroup>
@@ -30,10 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="LICENSE" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Content Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
     <Content Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -47,13 +48,6 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="4.3.2" />
     <PackageReference Include="System.Text.Json" Version="9.0.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 
 </Project>
