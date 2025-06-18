@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12.0</LangVersion>
     <Nullable>enable</Nullable>
     <Title>Sondor.Errors</Title>
     <Authors>Sondor Technology</Authors>
@@ -31,6 +32,8 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <PackageReference Include="NUnit" Version="4.3.2" />
+    <PackageReference Include="System.Text.Json" Version="9.0.6" />
   </ItemGroup>
 
 </Project>

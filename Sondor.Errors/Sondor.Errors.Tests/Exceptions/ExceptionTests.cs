@@ -87,4 +87,25 @@ public class ExceptionTests
         // assert
         Assert.That(exception.Message, Is.EqualTo(expected));
     }
+
+    /// <summary>
+    /// Ensures that <see cref="SondorAssertionException"/> constructor works as expected.
+    /// </summary>
+    [Test]
+    public void SondorAssertionExceptionConstructor()
+    {
+        // Arrange
+        const string message = "This is an assertion exception";
+
+        // Act
+        var exception = new SondorAssertionException(message);
+
+        // Assert
+        Assert.Multiple(() =>
+        {
+            Assert.That(exception.Message, Is.EqualTo(message));
+            Assert.That(exception, Is.InstanceOf<SondorAssertionException>());
+            Assert.That(exception, Is.InstanceOf<Exception>());
+        });
+    }
 }
