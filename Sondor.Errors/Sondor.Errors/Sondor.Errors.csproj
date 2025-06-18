@@ -18,20 +18,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="README.md" />
+    <None Remove="sondor-technology-logo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>$(AssemblyName).Tests</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="README.md">
+    <Content Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
-    <None Update="sondor-technology-logo.jpg">
+    </Content>
+    <Content Include="sondor-technology-logo.jpg">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NUnit" Version="4.3.2" />
     <PackageReference Include="System.Text.Json" Version="9.0.6" />
   </ItemGroup>
