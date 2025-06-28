@@ -10,7 +10,7 @@ variables:
 - name: major
   value: 1
 - name: minor
-  value: 0
+  value: 1
 - name: repository
   value: sondor-errors-package
 - group: sondor-git
