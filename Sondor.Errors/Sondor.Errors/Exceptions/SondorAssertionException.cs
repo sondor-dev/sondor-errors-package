@@ -7,4 +7,5 @@
 /// Creates a new instance of <see cref="SondorAssertionException"/>.
 /// </remarks>
 /// <param name="message">The message.</param>
-public class SondorAssertionException(string message) : Exception(message);
+public class SondorAssertionException(string message) :
+    Exception(message);

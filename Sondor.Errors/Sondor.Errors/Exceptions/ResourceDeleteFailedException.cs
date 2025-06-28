@@ -11,12 +11,12 @@ public class ResourceDeleteFailedException :
     /// <summary>
     /// The resource that failed to delete.
     /// </summary>
-    public string Resource { get; }
+    public string Resource { get; init; }
 
     /// <summary>
     /// The reasons for the failure to delete the resource.
     /// </summary>
-    public IEnumerable<string> Reasons { get; }
+    public IEnumerable<string> Reasons { get; init; }
 
     /// <summary>
     /// Creates a new instance of the <see cref="ResourceDeleteFailedException"/>.

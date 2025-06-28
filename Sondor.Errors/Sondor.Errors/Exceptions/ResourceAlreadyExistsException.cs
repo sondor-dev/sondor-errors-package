@@ -11,17 +11,17 @@ public class ResourceAlreadyExistsException :
     /// <summary>
     /// The resource that already exists.
     /// </summary>
-    public string Resource { get; }
+    public string Resource { get; init; }
 
     /// <summary>
     /// The name of the property that was used to check for the resource.
     /// </summary>
-    public string PropertyName { get; }
+    public string PropertyName { get; init; }
     
     /// <summary>
     /// The value of the property that was used to check for the resource.
     /// </summary>
-    public string? PropertyValue { get; }
+    public string? PropertyValue { get; init; }
     
     /// <summary>
     /// Creates a new instance of the <see cref="ResourceAlreadyExistsException"/>.

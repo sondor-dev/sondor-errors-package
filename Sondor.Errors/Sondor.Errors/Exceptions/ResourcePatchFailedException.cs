@@ -11,12 +11,12 @@ public class ResourcePatchFailedException :
     /// <summary>
     /// The resource that failed to patch.
     /// </summary>
-    public string Resource { get; }
+    public string Resource { get; init; }
 
     /// <summary>
     /// The patches that failed to apply.
     /// </summary>
-    public IDictionary<string, string?> Patches { get; }
+    public IDictionary<string, string?> Patches { get; init; }
 
     /// <summary>
     /// Creates a new instance of the <see cref="ResourcePatchFailedException"/>.

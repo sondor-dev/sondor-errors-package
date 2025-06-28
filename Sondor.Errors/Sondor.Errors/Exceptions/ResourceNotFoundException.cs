@@ -11,17 +11,17 @@ public class ResourceNotFoundException :
     /// <summary>
     /// The resource that was not found.
     /// </summary>
-    public string Resource { get; } = string.Empty;
+    public string Resource { get; init; } = string.Empty;
 
     /// <summary>
     /// The name of the property that was used to search for the resource.
     /// </summary>
-    public string PropertyName { get; } = string.Empty;
+    public string PropertyName { get; init; } = string.Empty;
 
     /// <summary>
     /// The value of the property that was used to search for the resource.
     /// </summary>
-    public string? PropertyValue { get; }
+    public string? PropertyValue { get; init; }
 
     /// <summary>
     /// Creates a new instance of the <see cref="ResourceNotFoundException"/>.

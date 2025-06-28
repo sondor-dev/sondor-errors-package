@@ -11,17 +11,17 @@ public class ResourceUpdateFailedException :
     /// <summary>
     /// The resource that failed to be updated.
     /// </summary>
-    public string Resource { get; }
+    public string Resource { get; init; }
 
     /// <summary>
     /// The new resource that was attempted to be updated.
     /// </summary>
-    public object? NewResource { get; }
+    public object? NewResource { get; init; }
 
     /// <summary>
     /// The reasons for the failure to create the resource.
     /// </summary>
-    public IEnumerable<string> Reasons { get; }
+    public IEnumerable<string> Reasons { get; init; }
 
     /// <summary>
     /// Creates a new instance of the <see cref="ResourceCreateFailedException"/>.
