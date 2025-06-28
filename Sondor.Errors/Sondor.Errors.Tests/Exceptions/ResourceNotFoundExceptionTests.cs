@@ -60,4 +60,20 @@ public class ResourceNotFoundExceptionTests
             Assert.That(exception.Message, Is.EqualTo(expected));
         });
     }
+
+    /// <summary>
+    /// Ensures that <see cref="ResourceNotFoundException"/> constructor with custom message.
+    /// </summary>
+    [Test]
+    public void Constructor_custom_message()
+    {
+        // arrange
+        const string expected = "Custom message";
+
+        // act
+        var exception = new ResourceNotFoundException(expected);
+
+        // assert
+        Assert.That(exception.Message, Is.EqualTo(expected));
+    }
 }
