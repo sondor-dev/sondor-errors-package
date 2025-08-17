@@ -54,4 +54,33 @@ public static class SondorErrorCodes
     /// The bad request error code.
     /// </summary>
     public const int BadRequest = 1009;
+
+    /// <summary>
+    /// The validation failed error code.
+    /// </summary>
+    public const int ValidationFailed = 1010;
+
+    /// <summary>
+    /// The task cancelled error code.
+    /// </summary>
+    public const int TaskCancelled = 1011;
+
+    /// <summary>
+    /// Collection of Sondor error codes.
+    /// </summary>
+    internal static readonly int[] ErrorCodes = new int[]
+    {
+        UnexpectedError,
+        ResourceNotFound,
+        ResourceCreateFailed,
+        ResourceUpdateFailed,
+        ResourceDeleteFailed,
+        ResourcePatchFailed,
+        ResourceAlreadyExists,
+        Unauthorized,
+        Forbidden,
+        BadRequest,
+        ValidationFailed,
+        TaskCancelled,
+    };
 }

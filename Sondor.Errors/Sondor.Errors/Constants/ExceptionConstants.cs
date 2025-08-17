@@ -40,4 +40,10 @@ internal static class ExceptionConstants
     /// </summary>
     internal const string ResourceAlreadyExistsMessage =
         "Unfortunately, '{0}' already exists with an '{1}' of '{2}'.";
+
+    /// <summary>
+    /// The unsupported error code exception message.
+    /// </summary>
+    internal const string UnsupportedErrorCode =
+        "Unfortunately, the error code '{0}' is not supported.";
 }

@@ -217,8 +217,8 @@ public class SondorErrorTests
         var hash = 17;
         
         hash = hash * 31 + errorCode.GetHashCode();
-        hash = hash * 31 + (errorType?.GetHashCode() ?? 0);
-        hash = hash * 31 + (errorDescription?.GetHashCode() ?? 0);
+        hash = hash * 31 + errorType.GetHashCode();
+        hash = hash * 31 + errorDescription.GetHashCode();
         
         var expected = hash;
 #endif
