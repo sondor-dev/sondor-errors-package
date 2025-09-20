@@ -27,5 +27,7 @@ public class SondorErrorCodeArgs :
         yield return SondorErrorCodes.Unauthorized;
         yield return SondorErrorCodes.Forbidden;
         yield return SondorErrorCodes.BadRequest;
+        yield return SondorErrorCodes.ValidationFailed;
+        yield return SondorErrorCodes.TaskCancelled;
     }
 }
