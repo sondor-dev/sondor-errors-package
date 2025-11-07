@@ -5,7 +5,8 @@ namespace Sondor.Errors;
 /// <summary>
 /// Sondor result type.
 /// </summary>
-public readonly struct SondorResult
+public readonly struct SondorResult :
+    ISondorResult
 {
     /// <summary>
     /// The error.
@@ -50,7 +51,8 @@ public readonly struct SondorResult
 /// Sondor result type.
 /// </summary>
 /// <typeparam name="TResult">The result type.</typeparam>
-public readonly struct SondorResult<TResult>
+public readonly struct SondorResult<TResult> :
+    ISondorResult<TResult>
 {
     /// <summary>
     /// The result.
